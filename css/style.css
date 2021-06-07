@@ -1,5 +1,16 @@
 @charset "UTF-8";
+
+/* =======Base
+================================================================ */
+
 body {
     background-color: azure;
+    font-family: "メイリオ", "Meiryo", sans-serif;
+    font-size: 1.125rem;
     color: #383838
+}
+
+.wrapper {
+    max-width: 84%;
+    margin: 0 auto;
 }

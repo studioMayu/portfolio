@@ -6,41 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>studioMayu</title>
+    <link rel="stylesheet" href="https://unpkg.com/browse/destyle.css@2.0.2/destyle.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <ul class="nav">
-                <li>トップ</li>
-                <li>制作物</li>
-                <li>自己紹介</li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class="fv">
-            <h1 class="site-title">studioMayu<br> portfolio
-            </h1>
-        </div>
-        <section class="product">
-            <h2 class="sec-title">制作物</h2>
-            <div>
-                <p>タブで制作物並べたい</p>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-inner">
+                <h1 class="site-title">studioMayu</h1>
+                <div class="header-inner__circle-01">円１</div>
+                <div class="header-inner__circle-02">円２</div>
+                <ul class="nav">
+                    <li>制作物</li>
+                    <li>自己紹介</li>
+                    <li>スキル</li>
+                </ul>
             </div>
-        </section>
-        <section class="about">
-            <h2 class="sec-title">自己紹介</h2>
-            <div>
-                <p>フレックスボックスを使って顔imgと紹介文横並び</p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        &copy;studioMayu 2021.Thanks for coming.
-    </footer>
+        </header>
+        <main>
+            <section class="products">
+                <h2 class="sec-title">制作物</h2>
+                <div class="products-01">
+                    <div class="products-01__mockimg">モックアップ画像入れるよ</div>
+                    <div class="products-01__txt">
+                        <h3>居酒屋あじさい</h3>
+                        <p>【制作時間】　約30時間</p>
+                        <p>【目的】　店舗の認知拡大</p>
+                        <p>【苦労した点】　ＷordＰress有料テーマ独自のマニュアル、コンテンツ、構成を考えるのが難しかった。</p>
+                        <!-- ここはtdタグがいいかも -->
+                    </div>
+                </div>
+                <div class="products-02">
+                    <div class="products-02__mockimg">モックアップ画像入れるよ</div>
+                    <div class="products-02__txt">
+                        <h3>居酒屋あじさい</h3>
+                        <p>【制作時間】　約30時間</p>
+                        <p>【目的】　店舗の認知拡大</p>
+                        <p>【苦労した点】　ＷordＰress有料テーマ独自のマニュアル、コンテンツ、構成を考えるのが難しかった。</p>
+                        <!-- ここはtdタグがいいかも -->
+                    </div>
+                </div>
+                <div class="products-03">
+                    <div class="products-03__mockimg">モックアップ画像入れるよ</div>
+                    <div class="products-03__txt">
+                        <h3>居酒屋あじさい</h3>
+                        <p>【制作時間】　約30時間</p>
+                        <p>【目的】　店舗の認知拡大</p>
+                        <p>【苦労した点】　ＷordＰress有料テーマ独自のマニュアル、コンテンツ、構成を考えるのが難しかった。</p>
+                        <!-- ここはtdタグがいいかも -->
+                    </div>
+                </div>
+
+            </section>
+            <section class="about">
+                <h2 class="sec-title">自己紹介</h2>
+                <div class="about__box">
+                    <div class="about__img">円バックでイラストの似顔絵img</div>
+                    <div class="about__text">
+                        <p>自己紹介文</p>
+                    </div>
+                </div>
+            </section>
+            <section class="skill">
+                <div class="skill__box">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>Sass</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            &copy;studioMayu 2021.Thanks for coming.
+        </footer>
+    </div>
+
 </body>
 
 </html>
