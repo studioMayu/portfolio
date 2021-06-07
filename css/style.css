@@ -4,13 +4,79 @@
 ================================================================ */
 
 body {
-    background-color: azure;
+    background-color: #ffffff;
     font-family: "メイリオ", "Meiryo", sans-serif;
     font-size: 1.125rem;
     color: #383838
 }
 
 .wrapper {
+    width: 100%;
+}
+
+.container {
     max-width: 84%;
     margin: 0 auto;
+}
+
+.sec-title {
+    margin-top: 80px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.products,
+.skill {
+    background-color: #f0ffff;
+    margin: 0 -26%;
+}
+
+
+/* =======Header
+================================================================ */
+
+.header {}
+
+
+/* =======Products
+================================================================ */
+
+.products__box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.products-01__mockimg {
+    width: 500px;
+    height: 300px;
+}
+
+.products-01__txt {
+    width: 500px;
+    height: 300px;
+}
+
+
+/* =======About
+================================================================ */
+
+
+/* =======Skill
+================================================================ */
+
+
+/* =======Footer
+================================================================ */
+
+.footer {
+    height: 80px;
+}
+
+.footer__copyright {
+    background-color: #ffffff;
+    font-size: .875rem;
+    line-height: 80px;
+    text-align: center;
+    vertical-align: baseline;
 }
