@@ -4,10 +4,14 @@
 ================================================================ */
 
 body {
-    background-color: #ffffff;
+    background-color: bisque;
     font-family: "メイリオ", "Meiryo", sans-serif;
     font-size: 1.125rem;
     color: #383838
+}
+
+ul {
+    list-style: none;
 }
 
 .wrapper {
@@ -15,20 +19,18 @@ body {
 }
 
 .container {
-    max-width: 84%;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
-.sec-title {
+.ly-sec {
     margin-top: 80px;
-    font-size: 1.5rem;
-    text-align: center;
 }
 
-.products,
-.skill {
-    background-color: #f0ffff;
-    margin: 0 -26%;
+.sec-title {
+    padding-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 
@@ -41,29 +43,98 @@ body {
 /* =======Products
 ================================================================ */
 
+.products__container {
+    max-width: 1080px;
+    margin: 60px auto 0;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
 .products__box {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
-.products-01__mockimg {
+.products__mock {
     width: 500px;
     height: 300px;
+    border: 1px solid #383838
 }
 
-.products-01__txt {
+.products__txt {
     width: 500px;
     height: 300px;
+    border: 1px solid #383838
 }
 
 
 /* =======About
 ================================================================ */
 
+.about__box {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1080px;
+    margin: 30px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.about__img {
+    width: 500px;
+    height: 600px;
+    position: relative;
+    border: 1px solid #383838
+}
+
+.about__img__circle {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    background-color: rgba(255, 176, 248, 0.6);
+    border-radius: 40% 70% 50% 30%/50%;
+}
+
+.about__text {
+    width: 500px;
+    height: 600px;
+    border: 1px solid #383838
+}
+
 
 /* =======Skill
 ================================================================ */
+
+.skill__box {
+    display: flex;
+    width: 800px;
+    height: 180px;
+    margin: 80px auto 0;
+    background-color: #ffffff;
+}
+
+.skill__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill__item li {
+    width: 160px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 80px;
+    background-color: bisque;
+    line-height: 60px;
+    font-size: 1.125rem;
+    text-align: center;
+}
 
 
 /* =======Footer
@@ -71,6 +142,7 @@ body {
 
 .footer {
     height: 80px;
+    margin: 100px 0 0;
 }
 
 .footer__copyright {

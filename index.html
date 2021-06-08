@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>studioMayu</title>
-    <link rel="stylesheet" href="https://unpkg.com/browse/destyle.css@2.0.2/destyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js"></script>
 </head>
@@ -27,49 +27,53 @@
                 </div>
             </header>
             <main>
-                <section class="products">
+                <section class="ly-sec products">
                     <h2 class="sec-title">制作物</h2>
-                    <div class="products__box products-01">
-                        <div class="products-01__mockimg">モックアップ画像入れるよ</div>
-                        <div class="products-01__txt">
-                            <h3>居酒屋あじさい</h3>
-                            <p>【制作時間】　約30時間</p>
-                            <p>【目的】　店舗の認知拡大</p>
-                            <p>【苦労した点】　ＷordＰress有料テーマ独自のマニュアル、コンテンツ、構成を考えるのが難しかった。</p>
-                            <!-- ここはtdタグがいいかも -->
-                            <p><a href="#">詳しく見る</a></p>
+                    <div class="products__container">
+                        <div class="products__box products-01">
+                            <div class="products__mock">モックアップ画像入れるよ</div>
+                            <div class="products__txt">
+                                <h3>居酒屋あじさい</h3>
+                                <p>【制作時間】　約30時間</p>
+                                <p>【目的】　店舗の認知拡大</p>
+                                <p>【担当箇所】　サイト設計、写真準備、WordPress構築</p>
+                                <!-- ここはtdタグがいいかも -->
+                                <p><a href="#">詳しく見る</a></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="products__box products-02">
-                        <div class="products-02__mockimg">モックアップ画像入れるよ</div>
-                        <div class="products-02__txt">
-                            <h3>居酒屋あじさい</h3>
-                            <p>【制作時間】　約30時間</p>
-                            <p>【目的】　店舗の認知拡大</p>
-                            <p>【苦労した点】　ＷordＰress有料テーマ独自のマニュアル、コンテンツ、構成を考えるのが難しかった。</p>
-                            <!-- ここはtdタグがいいかも -->
-                            <p><a href="#">詳しく見る</a></p>
+                        <div class="products__box products-02">
+                            <div class="products__mock">モックアップ画像入れるよ</div>
+                            <div class="products__txt">
+                                <h3>（架空）ウェディングフェアLP</h3>
+                                <p>【制作時間】　約30時間</p>
+                                <p>【目的】　フェアの認知拡大・申し込みボタンクリック</p>
+                                <p>【担当箇所】　デザイン（Figma使用）、コーディング</p>
+                                <!-- ここはtdタグがいいかも -->
+                                <p><a href="#">詳しく見る</a></p>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="products__box products-03">
-                        <div class="products-03__mockimg">モックアップ画像入れるよ</div>
-                        <div class="products-03__txt">
-                            <h3>居酒屋あじさい</h3>
-                            <p>【制作時間】　約30時間</p>
-                            <p>【目的】　店舗の認知拡大</p>
-                            <p>【苦労した点】　ＷordＰress有料テーマ独自のマニュアル、コンテンツ、構成を考えるのが難しかった。</p>
-                            <!-- ここはtdタグがいいかも -->
-                            <p><a href="#">詳しく見る</a></p>
-
+                        <div class="products__box products-03">
+                            <div class="products__mock">モックアップ画像入れるよ</div>
+                            <div class="products__txt">
+                                <h3>タロット占い</h3>
+                                <p>【制作時間】　約30時間</p>
+                                <p>【目的】　JavaScriptの練習</p>
+                                <p>【担当箇所】　デザイン（Figma使用）、ロジックを考える、コーディング</p>
+                                <!-- ここはtdタグがいいかも -->
+                                <p><a href="#">詳しく見る</a></p>
+                            </div>
                         </div>
                     </div>
 
                 </section>
-                <section class="about">
+                <section class="ly-sec about">
                     <h2 class="sec-title">自己紹介</h2>
                     <div class="about__box">
-                        <div class="about__img">円バックでイラストの似顔絵img</div>
+                        <div class="about__img">
+                            <div class="about__img__circle">
+                                円バックでイラストの似顔絵img</div>
+                        </div>
                         <div class="about__text">
                             <p><span>古川　まゆみ</span>
                                 <span>【略歴】</span> 2004年神田外語大学中国語学科卒業後、銀行員、システム会社の事務、スポーツジムのスタッフ＆ヨガ講師、介護職などを経験。 web制作は2019年より独学中。2021年5月知人のサイトを制作。子育て奮闘中。
@@ -79,10 +83,10 @@
                         </div>
                     </div>
                 </section>
-                <section class="skill">
+                <section class="ly-sec skill">
                     <h2 class="sec-title">スキル</h2>
                     <div class="skill__box">
-                        <ul>
+                        <ul class="skill__item">
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>jQuery</li>
