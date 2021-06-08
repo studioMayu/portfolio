@@ -37,7 +37,42 @@ ul {
 /* =======Header
 ================================================================ */
 
-.header {}
+.header__site-title {
+    line-height: 100px;
+    font-size: 2.25rem;
+    text-align: left;
+}
+
+.header-inner {
+    display: flex;
+    position: relative;
+}
+
+.header-inner__circle-01 {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 176, 248, 0.4);
+    border-radius: 40% 70% 50% 30%/50%;
+}
+
+.header-inner__circle-02 {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 250, 255, 0.7);
+    border-radius: 70% 40% 60% 30%/40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    width: 500px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 
 
 /* =======Products
@@ -59,13 +94,13 @@ ul {
 .products__mock {
     width: 500px;
     height: 300px;
-    border: 1px solid #383838
+    border: 1px solid #c0c0c0;
 }
 
 .products__txt {
     width: 500px;
     height: 300px;
-    border: 1px solid #383838
+    border: 1px solid #c0c0c0;
 }
 
 
@@ -86,7 +121,7 @@ ul {
     width: 500px;
     height: 600px;
     position: relative;
-    border: 1px solid #383838
+    border: 1px solid #c0c0c0;
 }
 
 .about__img__circle {
@@ -98,14 +133,21 @@ ul {
     transform: translateY(-50%) translateX(-50%);
     -webkit- transform: translateY(-50%) translateX(-50%);
     margin: auto;
-    background-color: rgba(255, 176, 248, 0.6);
+    background-color: rgba(255, 176, 248, 0.4);
     border-radius: 40% 70% 50% 30%/50%;
+}
+
+.fukidashi {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 200px;
 }
 
 .about__text {
     width: 500px;
     height: 600px;
-    border: 1px solid #383838
+    border: 1px solid #c0c0c0;
 }
 
 
