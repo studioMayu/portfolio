@@ -8,6 +8,8 @@
     <title>studioMayu</title>
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e1109b0de3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </head>
 
@@ -19,16 +21,17 @@
                 <h1 class="header__site-title">studioMayu</h1>
                 <div class="header-inner">
                     <div class="header-inner__circle-01">円１</div>
+                    <!--ここdivを一つにしてbackgroundにimg二つ重ねるでもいいのか？-->
                     <div class="header-inner__circle-02">円２</div>
-                    <ul class="nav">
-                        <li>制作物</li>
-                        <li>自己紹介</li>
-                        <li>スキル</li>
+                    <ul class="header-inner__nav">
+                        <li class="header-inner__nav-item"><a href="#products">制作物</a></li>
+                        <li class="header-inner__nav-item"><a href="#about">自己紹介</a></li>
+                        <li class="header-inner__nav-item"><a href="#skill">スキル</a></li>
                     </ul>
                 </div>
             </header>
             <main>
-                <section class="ly-sec products">
+                <section id="products" class="ly-sec">
                     <h2 class="sec-title">制作物</h2>
                     <div class="products__container">
                         <div class="products__box products-01">
@@ -68,7 +71,7 @@
                     </div>
 
                 </section>
-                <section class="ly-sec about">
+                <section id="about" class="ly-sec">
                     <h2 class="sec-title">自己紹介</h2>
                     <div class="about__box">
                         <div class="about__img">
@@ -86,7 +89,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="ly-sec skill">
+                <section id="skill" class="ly-sec">
                     <h2 class="sec-title">スキル</h2>
                     <div class="skill__box">
                         <ul class="skill__item">
@@ -99,8 +102,11 @@
                         </ul>
                     </div>
                 </section>
+                <div id="page-top"><i class="fas fa-chevron-up"></i></div>
             </main>
+
         </div>
+
         <footer class="footer">
             <p class="footer__copyright"> &copy;studioMayu 2021.Thanks for coming.</p>
         </footer>
