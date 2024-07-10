@@ -472,17 +472,16 @@ h1 {
 
 .gallery {
   margin-top: 6.25rem;
+}
 
+.gallery p {
+  font-size: 1.25rem;
 }
 
 .haiku {
   font-size: 1.75rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
-}
-
-.gallery p {
-  font-size: 1.25rem;
 }
 
 .issa {
