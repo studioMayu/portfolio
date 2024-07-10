@@ -481,7 +481,7 @@ h1 {
 }
 
 .gallery p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .issa {
@@ -494,13 +494,13 @@ h2 {
 }
 
 .photo-green {
-  width: 60%;
-  margin-top: 6.25rem;
+  width: 50%;
+  margin-top: 6rem;
 }
 
 .square {
   width: 30%;
-  margin-top: 16.25rem;
+  margin-top: 15rem;
   row-gap: 160px;
 }
 
