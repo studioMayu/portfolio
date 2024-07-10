@@ -1,0 +1,626 @@
+/*! Oreset.css v2.0.0 | MIT License | https://github.com/hirosiva/Oreset.css */
+/*
+  # Global
+---------------------------------------------- */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  # Document & Sections
+---------------------------------------------- */
+:where(html) {
+  block-size: 100%;
+  -webkit-text-size-adjust: none;
+}
+
+:where(body) {
+  min-block-size: 100%;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  font-feature-settings: "pkna";
+  -webkit-font-smoothing: antialiased;
+  color: #3c3c3c;
+}
+
+/*
+  # Grouping content
+---------------------------------------------- */
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
+:where(hr) {
+  border: none;
+  border-block-start: 1px solid;
+  color: inherit;
+  block-size: 0;
+  overflow: visible;
+}
+
+:where(ul, ol) {
+  list-style: none;
+}
+
+/*
+  # Text-level semantics
+---------------------------------------------- */
+:where(a:not([class])) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/*
+  # Embedded content
+---------------------------------------------- */
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+
+:where(img, picture, svg) {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+:where(svg:not([fill])) {
+  fill: currentColor;
+}
+
+/*
+  # Tabular data
+---------------------------------------------- */
+:where(table) {
+  border-collapse: collapse;
+}
+
+/*
+  # Forms
+---------------------------------------------- */
+:where(input, button, textarea, select, optgroup) {
+  font: inherit;
+  color: inherit;
+}
+
+:where(textarea) {
+  resize: vertical;
+  resize: block;
+}
+
+:where(button, label, select, summary, [role="button"], [role="option"]) {
+  cursor: pointer;
+}
+
+:where(input[type="file"])::-webkit-file-upload-button,
+:where(input[type="file"])::file-selector-button {
+  cursor: pointer;
+}
+
+:where(:disabled) {
+  cursor: not-allowed;
+}
+
+:where(label:has(> input:disabled), label:has(+ input:disabled)) {
+  cursor: not-allowed;
+}
+
+:where(button) {
+  border-style: solid;
+}
+
+/*
+  # Interactive & Misc
+---------------------------------------------- */
+:where(template, [hidden]:not([hidden="until-found"])) {
+  display: none;
+}
+
+/*
+  # Accessibility
+---------------------------------------------- */
+:where([disabled], [aria-disabled="true"]) {
+  cursor: not-allowed;
+}
+
+:where([aria-busy="true"]) {
+  cursor: progress;
+}
+
+:where([aria-controls]) {
+  cursor: pointer;
+}
+
+:where([aria-hidden="false"][hidden]) {
+  display: initial;
+}
+
+:where([aria-hidden="false"][hidden]):not(:focus) {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+:where(:focus:not(:focus-visible), ::before:focus:not(:focus-visible), ::after:focus:not(:focus-visible)) {
+  outline: none;
+}
+
+/**
+ * Prettier ignore
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* font */
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.shippori-mincho-regular {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.shippori-mincho-semibold {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* カスタムプロパティ */
+:root {
+  --main-color: ;
+}
+
+
+/*
+  ここからoreroll授業の。
+=========================== */
+
+
+.wrap {
+  min-height: 100vh;
+}
+
+.place-center {
+  display: grid;
+  place-content: center;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.box {
+  display: grid;
+  place-content: center;
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  background-color: #232830;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.hamburger {
+  width: 50%;
+  margin: 0 auto;
+  aspect-ratio: 880 / 1320;
+  overflow: hidden;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.stickyWrap {
+  height: 200vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* .end-text {
+  word-break: auto-phrase;
+} */
+
+.copy {
+  text-align: center;
+  font-size: .625rem;
+}
+
+
+/*
+  ここからあじさいギャラリーの。
+=========================== */
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.scroll {
+  writing-mode: vertical-rl;
+  font-size: .75rem;
+}
+
+.scroll::after {
+  content: "";
+  display: inline-block;
+  margin-top: 8px;
+  width: 1px;
+  height: 100px;
+  background: linear-gradient(#4A4A4A, #fff);
+  animation: scroll 2s infinite;
+}
+
+.kv {
+  position: relative;
+}
+
+.scroll-kv {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+}
+
+.scroll-kv::after {
+  content: "";
+  display: inline-block;
+  margin-top: 5px;
+  width: 1px;
+  height: 7rem;
+  background: linear-gradient(#fff, #081800);
+  animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+
+.gradation-wrapper {
+  background: linear-gradient(#fff 70%, #CFF9FF 80%, #C3A3D8, #96A7D2);
+}
+
+.shadow {
+box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.content-wrapper {
+  width: 94.444%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 4.5rem;
+  font-size: .875rem;
+  word-break: keep-all;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 2.5rem;
+}
+
+.gallery {
+  margin-top: 3.75rem;
+    position: relative;
+}
+
+.scroll-gallery {
+  position: absolute;
+  top: 20.625rem;
+  right: 2.777%;
+}
+
+.photo-green {
+  width: 83.33%;
+  margin-top: 3.75rem;
+}
+
+.square {
+  display: grid;
+row-gap: 60px;
+width: 55.55%;
+margin-top: 6.25rem;
+margin-left: auto;
+margin-right: auto;
+}
+
+.photo-square {
+  width: 100%;
+  align-items: center;
+}
+
+
+.haiku {
+  height: 11.25rem;
+  margin: 6.25rem auto;
+writing-mode: vertical-rl;
+font-size: 1.5rem;
+word-break: keep-all;
+line-height: 1.75;
+}
+
+.issa {
+  display: block;
+  font-size: 1rem;
+  text-align: end;
+}
+
+.photo-tate {
+width: 66.66%;
+margin: 0 0 0 auto;
+overflow: hidden;
+}
+
+.photo-square-mini {
+  width: 10rem;
+  margin-left: 2.777%;
+}
+
+.photo-trapeze {
+  width: 83.333%;
+  margin-top: 6.875rem;
+}
+
+.sec-end {
+  position: relative;
+}
+
+.scroll-end {
+  position: absolute;
+  top: -27.937rem;
+    right: 2.777%;
+}
+
+.content-end {
+  margin-top: 5rem;
+  max-width: 1440px;
+  margin-left: 2.77%;
+}
+
+.about-text-2, .end-text-2 {
+  margin-top: 1rem;
+}
+
+.photo-end {
+  margin-top: 5.625rem;
+}
+
+.btn-wrapper {
+display: grid;
+place-items: center;
+width: 3.75rem;
+height: 3.75rem;
+border-radius: 50%;
+background-color: rgb(216, 250, 255, .7);
+position: fixed;
+bottom: 1rem;
+right: 2.777%;
+}
+
+.btn-text {
+  font-size: .625rem;
+}
+
+.btn-text::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 26px;
+  margin: 0 auto;
+  color: #3C3C3C;
+  background-image: url('../img/Arrow@2x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page_top_btn {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+
+.copy {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.go-insta {
+  text-decoration: none;
+  color: #3C3C3C;
+}
+
+.wrap {
+  min-height: 100vh;
+}
+
+.stickyWrap {
+  height: 200vh;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+/* ------------ 600px以上 --------------------- */
+@media screen and (min-width:600px){
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  width: 8rem;
+}
+
+.scroll {
+  font-size: 1rem;
+}
+
+.kv img {
+  width: 100%;
+}
+
+.gradation-wrapper {
+  background: linear-gradient(#fff 65%, #CFF9FF 70%, #C3A3D8, #96A7D2);
+}
+
+.gallery {
+  margin-top: 6.25rem;
+
+}
+
+.haiku {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.gallery p {
+  font-size: 1.5rem;
+}
+
+.issa {
+  font-size: 1.25rem;
+  padding-right: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.photo-green {
+  width: 60%;
+  margin-top: 6.25rem;
+}
+
+.square {
+  width: 30%;
+  margin-top: 16.25rem;
+  row-gap: 160px;
+}
+
+.photo-tate {
+width: 39%;
+margin-right: 7.812%;
+}
+
+.photo-square-mini {
+    width: 18.75rem;
+    margin-left: 7.812%;
+    margin-top: 2.5rem;
+}
+
+.photo-trapeze {
+  width: 60%;
+margin-left: 2rem;
+margin-top: 16.25rem;
+}
+
+
+.content-end {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.25rem;
+  width: 94.444%;
+
+}
+
+.end-text, .end-text-2 {
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.end-text-2 {
+  margin-top: 2.5rem;
+}
+
+.photo-end {
+  margin-top: 11.25rem;
+}
+
+.copy {
+  font-size: .875rem;
+}
+
+.btn-wrapper {
+width: 4.5rem;
+height: 4.5rem;}
+
+.btn-text {
+  font-size: .875rem;
+}
+
+}
+
+
+/* ------------ 1920px以上 --------------------- */
