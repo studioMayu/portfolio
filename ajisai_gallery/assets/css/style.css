@@ -207,66 +207,38 @@
   margin: 0 auto;
 }
 
-.scroll {
+.copy {
   writing-mode: vertical-rl;
-  font-size: .75rem;
-}
-
-.scroll::after {
-  content: "";
-  display: inline-block;
-  margin-top: 8px;
-  width: 1px;
-  height: 100px;
-  background: linear-gradient(#4A4A4A, #fff);
-  animation: scroll 2s infinite;
+  letter-spacing: 0.2em;
+  font-size: 1.25rem;
+  line-height: 2.2;
 }
 
 .kv {
   position: relative;
+  margin-top: -1.5rem;
 }
 
-.scroll-kv {
-  color: #fff;
+.kv_copy {
   position: absolute;
+  top: 40%;
   left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
 }
 
-.scroll-kv::after {
-  content: "";
-  display: inline-block;
-  margin-top: 5px;
-  width: 1px;
-  height: 7rem;
-  background: linear-gradient(#fff, #081800);
-  animation: scroll 1.5s infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: scale(1, 0);
-    transform-origin: 0 0;
-  }
-  50% {
-    transform: scale(1, 1);
-    transform-origin: 0 0;
-  }
-  50.1% {
-    transform: scale(1, 1);
-    transform-origin: 0 100%;
-  }
-  100% {
-    transform: scale(1, 0);
-    transform-origin: 0 100%;
-  }
+.kv_text_f1 {
+font-size: 2.5rem;
+writing-mode: lr;
 }
 
 .gradation-wrapper {
   background: linear-gradient(#fff 70%, #CFF9FF 80%, #C3A3D8, #96A7D2);
 }
 
+/* shadowをもっとうすくぼやーっとするかなし？ */
 .shadow {
 box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
@@ -277,12 +249,21 @@ box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
 }
 
+.header-inner {
+  display: flex;
+justify-content: space-between;
+    align-items: center;
+}
+
 h1 {
   width: 4.5rem;
-  font-size: .875rem;
-  word-break: keep-all;
-  padding-top: 1rem;
+  padding-top: .5rem;
   padding-bottom: 1rem;
+  z-index: 10;
+}
+
+.sub-title {
+  font-size: .75rem;
 }
 
 h2 {
@@ -294,10 +275,9 @@ h2 {
     position: relative;
 }
 
-.scroll-gallery {
-  position: absolute;
-  top: 20.625rem;
-  right: 2.777%;
+.green-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-green {
@@ -305,28 +285,52 @@ h2 {
   margin-top: 3.75rem;
 }
 
+.photo-green-copy {
+padding-top: 2.5rem;
+    padding-right: 30%;
+}
+
+.totyu{
+
+}
+
+.tokiniha {
+  display: inline-block;
+  padding: 1.5rem 0;
+}
+
 .square {
   display: grid;
-row-gap: 60px;
-width: 55.55%;
+row-gap: 5rem;
+width: 69.444%;
+justify-items: center;
 margin-top: 6.25rem;
 margin-left: auto;
 margin-right: auto;
 }
 
+.square-item:first-child {
+  margin-left: 3rem;
+}
+
+.square-item:nth-child(2) {
+  margin-right: 2.5rem;
+}
+
+
 .photo-square {
-  width: 100%;
+  width: 12.5rem;
   align-items: center;
 }
 
 
 .haiku {
-  height: 11.25rem;
-  margin: 6.25rem auto;
+  margin: 10rem auto;
 writing-mode: vertical-rl;
-font-size: 1.5rem;
+font-size: 1.25rem;
 word-break: keep-all;
-line-height: 1.75;
+line-height: 2.2;
+letter-spacing: 0.5em;
 }
 
 .issa {
@@ -335,15 +339,39 @@ line-height: 1.75;
   text-align: end;
 }
 
+.tate-container {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .photo-tate {
-width: 66.66%;
+width: 68%;
+height: 100vh;
 margin: 0 0 0 auto;
 overflow: hidden;
+}
+
+.tate-copy {
+position: absolute;
+    top: 70%;
+    left: 5%;
+line-height: 1.7;
+}
+
+.square-mini-container {
+  margin-top: 4.875rem;
+  display: flex;
 }
 
 .photo-square-mini {
   width: 10rem;
   margin-left: 2.777%;
+}
+
+.trapeze-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-trapeze {
@@ -353,12 +381,6 @@ overflow: hidden;
 
 .sec-end {
   position: relative;
-}
-
-.scroll-end {
-  position: absolute;
-  top: -27.937rem;
-    right: 2.777%;
 }
 
 .content-end {
@@ -375,40 +397,7 @@ overflow: hidden;
   margin-top: 5.625rem;
 }
 
-.btn-wrapper {
-display: grid;
-place-items: center;
-width: 3.75rem;
-height: 3.75rem;
-border-radius: 50%;
-background-color: rgb(216, 250, 255, .7);
-position: fixed;
-bottom: 1rem;
-right: 2.777%;
-}
-
-.btn-text {
-  font-size: .625rem;
-}
-
-.btn-text::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 26px;
-  margin: 0 auto;
-  color: #3C3C3C;
-  background-image: url('../img/Arrow@2x.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.page_top_btn {
-  color: #3C3C3C;
-  text-decoration: none;
-}
-
-.copy {
+.copyright {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -459,7 +448,7 @@ h1 {
   width: 8rem;
 }
 
-.scroll {
+.sub-title {
   font-size: 1rem;
 }
 
@@ -473,11 +462,16 @@ h1 {
 
 .gallery {
   margin-top: 6.25rem;
+
 }
 
 .about-text {
   font-size: 1.25rem;
 }
+
+.spview {
+    display: none;
+  }
 
 .haiku {
   font-size: 1.75rem;
@@ -494,8 +488,14 @@ h2 {
   font-size: 2.5rem;
 }
 
+.green-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+}
+
 .photo-green {
-  width: 50%;
+  width: 100%;
   margin-top: 6rem;
 }
 
@@ -510,11 +510,13 @@ width: 39%;
 margin-right: 7.812%;
 }
 
+
 .photo-square-mini {
     width: 18.75rem;
     margin-left: 7.812%;
     margin-top: 2.5rem;
 }
+
 
 .photo-trapeze {
   width: 60%;
