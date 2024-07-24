@@ -72,5 +72,6 @@
     background-position: calc(100% * (1 - var(--progress))) 0;
     background-clip: text;
     background-size: 200% 100%;
+    animation-duration: 7s;
   }
 }
