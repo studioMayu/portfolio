@@ -217,6 +217,16 @@
 .kv {
   position: relative;
   margin-top: -1.5rem;
+  animation: zoomIn 3s ease-in-out 1 forwards;  /* アニメーションを1回だけ実行し、終了後の状態を維持 */
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .kv_copy {
