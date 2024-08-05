@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/oreroll.css">
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
@@ -25,7 +27,7 @@
     <div class="gradation-wrapper">
       <main class="">
         <div class="kv">
-          <picture>
+          <picture class="kv-image">
             <source srcset="assets/img/kv_sp.jpg 1x, assets/img/kv_sp@2x.jpg 2x" media="(max-width: 600px)">
             <img src="assets/img/pc_kv.jpg" srcset="assets/img/pc_kv.jpg 1x, assets/img/pc_kv@2x.jpg 2x" alt="ブルーと白のあじさいたち" width="1280" height="800">
           </picture>
@@ -66,11 +68,13 @@
               <p>湿った土の匂いと<br>雨の音</p>
             </div>
           </div>
-          <div class="square-mini-container">
-            <div>
+          <div class="square-mini-container content-wrapper">
+            <div class="square-mini-container-photo">
               <figure><img data-trigger="fadeIn" class="shadow photo-square-mini" src="assets/img/6727ajisai3.jpg" alt="薄紫色のホンアジサイ" srcset="assets/img/6727ajisai3.jpg 1x, assets/img/6727ajisai3@2x.jpg 2x" width="500" height="500"></figure>
             </div>
-            <p class="shippori-mincho-regular">ミラーレス一眼を買ってから、身近なものの魅力や息づかいを改めて感じるようになった気がします。</p>
+            <div class="square-mini-container-text">
+              <p class="shippori-mincho-regular">ミラーレス一眼を買ってから、身近なものの魅力や息づかいを改めて感じるようになった気がします。</p>
+            </div>
           </div>
           <!-- /.square-mini-container -->
           <div class="trapeze-container">
@@ -94,8 +98,8 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <a class="go-insta" href="https://www.instagram.com/studio_mayu/" target="_blank">
+      <footer class="footer content-wrapper">
+        <a class="insta" href="https://www.instagram.com/studio_mayu/" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
         <p class="copyright libre-baskerville-regular"><small>&copy;studioMayu</small></p>
