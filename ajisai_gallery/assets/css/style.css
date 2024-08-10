@@ -232,7 +232,7 @@ h1 {
 
 .copy {
   writing-mode: vertical-rl;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.4em;
   font-size: 1.25rem;
   line-height: 2.2;
 }
@@ -277,7 +277,7 @@ writing-mode: lr;
 }
 
 .gradation-wrapper {
-  background: linear-gradient(#fff 70%, #CFF9FF 80%, #C3A3D8, #96A7D2);
+  background: linear-gradient(#fff 60%, #ebfdff 70%, #c9bcd1, #bec6da);
 }
 
 /* shadowをもっとうすくぼやーっとするかなし？ */
@@ -307,8 +307,8 @@ h2 {
 }
 
 .photo-green-copy {
-padding-top: 2.5rem;
-    padding-right: 30%;
+    padding-top: 5rem;
+    padding-right: 25%;
 }
 
 .totyu{
@@ -322,7 +322,7 @@ padding-top: 2.5rem;
 
 .square {
   display: grid;
-row-gap: 5rem;
+row-gap: 7rem;
 width: 69.444%;
 justify-items: center;
 margin-top: 6.25rem;
@@ -364,6 +364,7 @@ letter-spacing: 0.5em;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
+  height: 1000px;
 }
 
 .photo-tate {
@@ -375,9 +376,22 @@ overflow: hidden;
 
 .tate-copy {
 position: absolute;
-    top: 70%;
+    top: 60%;
     left: 5%;
 line-height: 1.7;
+}
+
+.tate-copy-potsu span {
+padding-bottom: 1.5rem;
+}
+
+.tate-copy-tuchi {
+  padding-top: 5rem;
+}
+
+.tate-copy-tuchi span {
+  display: inline-block;
+  padding-top: 12rem;
 }
 
 .square-mini-container {
@@ -403,6 +417,17 @@ line-height: 1.7;
 .trapeze-container {
   display: flex;
   flex-direction: column;
+  margin-top: 4.5rem;
+}
+
+.trapeze-copy {
+  margin-right: 2rem;
+}
+
+.trapeze-copy-ippo {
+  display: inline-block;
+    margin-right: 5rem;
+    padding-top: 2rem;
 }
 
 .photo-trapeze {
@@ -494,7 +519,7 @@ h1 {
 }
 
 .gradation-wrapper {
-  background: linear-gradient(#fff 65%, #CFF9FF 70%, #C3A3D8, #96A7D2);
+      background: linear-gradient(#fff 65%, #ebfdff 70%, #c9bcd1, #bec6da);
 }
 
 .gallery {
