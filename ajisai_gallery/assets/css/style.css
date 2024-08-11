@@ -395,7 +395,7 @@ padding-bottom: 1.5rem;
 }
 
 .square-mini-container {
-  margin-top: 4.875rem;
+  margin-top: 7rem;
   display: flex;
 }
 
@@ -417,22 +417,23 @@ padding-bottom: 1.5rem;
 .trapeze-container {
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
+  margin-top: 10rem;
 }
 
 .trapeze-copy {
-  margin-right: 2rem;
-}
-
-.trapeze-copy-ippo {
-  display: inline-block;
-    margin-right: 5rem;
-    padding-top: 2rem;
+  margin-right: 3.5rem;
 }
 
 .photo-trapeze {
   width: 83.333%;
-  margin-top: 6.875rem;
+  margin-top: 4rem;
+}
+
+.trapeze-copy-ippo {
+  display: grid;
+  place-content: center;
+    margin: 0 auto;
+height: 80vh;
 }
 
 .sec-end {
@@ -440,17 +441,20 @@ padding-bottom: 1.5rem;
 }
 
 .content-end {
-  margin-top: 5rem;
-  max-width: 1440px;
-  margin-left: 2.77%;
+}
+
+.about-text, .end-text {
+  line-height: 2;
+    letter-spacing: .03em;
 }
 
 .about-text-2, .end-text-2 {
   margin-top: 1rem;
+  line-height: 2;
+    letter-spacing: .03em;
 }
 
 .photo-end {
-  margin-top: 5.625rem;
 }
 
 .footer {
