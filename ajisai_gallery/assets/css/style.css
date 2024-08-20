@@ -703,6 +703,10 @@ height: 4.5rem;}
     margin-left: 0;
 }
 
+.trapeze-copy {
+    margin-right: 34%;
+}
+
 .trapeze-copy-ippo {
   height: 100vh;
 }
