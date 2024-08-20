@@ -685,7 +685,7 @@ height: 4.5rem;}
 
 .tate-copy {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 16%;
     line-height: 4;
 }
@@ -694,6 +694,17 @@ height: 4.5rem;}
 .tate-copy-tuchi span {
     display: block;
     padding-top: 12rem;
+}
+
+.square-mini-container {
+  width: 60.75%;
+    margin-top: 16rem;
+    display: flex;
+    margin-left: 0;
+}
+
+.trapeze-copy-ippo {
+  height: 100vh;
 }
 
 
