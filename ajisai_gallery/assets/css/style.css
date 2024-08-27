@@ -414,7 +414,7 @@ padding-bottom: 1.5rem;
 
 .square-mini-container-text {
   width: 50%;
-  font-size: .75rem;
+  font-size: 1rem;
   line-height: 1.8;
   align-content: center;
 }
@@ -541,6 +541,10 @@ h1 {
       background: linear-gradient(#fff 65%, #ebfdff 70%, #c9bcd1, #bec6da);
 }
 
+.copy {
+  font-size: 1.25rem;
+}
+
 .kv_copy {
 
 }
@@ -551,7 +555,7 @@ h1 {
 }
 
 .about-text {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .spview {
@@ -560,8 +564,8 @@ h1 {
 
 .haiku {
   font-size: 1.75rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
 }
 
 .issa {
@@ -591,13 +595,30 @@ h2 {
 }
 
 .photo-tate {
-width: 39%;
+width: 60%;
 margin-right: 7.812%;
 }
 
+.tate-copy {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    line-height: 2.2;
+}
+
+.tate-copy-tuchi span {
+    display: block;
+    padding-top: 10rem;
+}
+
+.square-mini-container {
+    margin-top: 7rem;
+    display: flex;
+    width: 70%;
+}
 
 .photo-square-mini {
-    width: 18.75rem;
+    width: 12rem;
     margin-left: 7.812%;
     margin-top: 2.5rem;
 }
@@ -607,6 +628,10 @@ margin-right: 7.812%;
   width: 60%;
 margin-left: 2rem;
 margin-top: 16.25rem;
+}
+
+.trapeze-copy {
+    margin-right: 16rem;
 }
 
 
@@ -620,7 +645,7 @@ margin-top: 16.25rem;
 
 .end-text, .end-text-2 {
   width: 50%;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .end-text-2 {
@@ -629,10 +654,6 @@ margin-top: 16.25rem;
 
 .photo-end {
   margin-top: 0;
-}
-
-.copy {
-  font-size: .875rem;
 }
 
 .btn-wrapper {
@@ -661,6 +682,10 @@ height: 4.5rem;}
   letter-spacing: 0.2em;
 }
 
+.about-text {
+  font-size: 1.2rem;
+}
+
 .green-container {
   position: relative;
   padding-bottom: 3rem;
@@ -674,7 +699,6 @@ height: 4.5rem;}
   position: absolute;
   top: 30%;
   right: 4%;
-  font-size: 1.25rem;
   padding-right: 14.2%;
   padding-top: 0;
 }
@@ -683,6 +707,7 @@ height: 4.5rem;}
   width: 40%;
   margin-top: 18rem;
 }
+
 
 .photo-square {
   width: 22.5rem;
@@ -712,18 +737,40 @@ height: 4.5rem;}
 
 .square-mini-container {
   width: 60.75%;
-  margin-top: 16rem;
+  margin-top: 18rem;
   display: flex;
   margin-left: 10rem;
   }
+
+.photo-square-mini {
+    width: 18.75rem;
+    margin-left: 7.812%;
+    margin-top: 2.5rem;
+}
+
+  .trapeze-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+}
 
 .trapeze-copy {
   margin-right: 34%;
   }
 
+.trapeze-container {
+    margin-top: 12rem;
+}
+
 .trapeze-copy-ippo {
   height: 100vh;
   }
+
+  .end-text, .end-text-2 {
+  width: 50%;
+  font-size: 1.2rem;
+}
+
 
 }
 
