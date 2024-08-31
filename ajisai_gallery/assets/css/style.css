@@ -282,12 +282,12 @@ writing-mode: lr;
 }
 
 .gradation-wrapper {
-  background: linear-gradient(#fff 60%, #ebfdff 70%, #c9bcd1, #bec6da);
+  background: linear-gradient(#fff 60%, #eefafb 70%, #f1e3f9, #d9dfed);
 }
 
 /* shadowをもっとうすくぼやーっとするかなし？ */
 .shadow {
-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 20px 24px 1px rgba(0, 0, 0, 0.04);
 }
 
 
@@ -349,20 +349,20 @@ margin-right: auto;
   align-items: center;
 }
 
+.copy-middle-container {
+display: grid;
+    height: 100vh;
+    align-items: center;
+}
 
-.haiku {
-  margin: 10rem auto;
+
+.copy-middle {
+  margin: 0 auto;
 writing-mode: vertical-rl;
 font-size: 1.25rem;
 word-break: keep-all;
 line-height: 2.2;
 letter-spacing: 0.5em;
-}
-
-.issa {
-  display: block;
-  font-size: 1rem;
-  text-align: end;
 }
 
 .tate-container {
@@ -381,9 +381,9 @@ overflow: hidden;
 
 .tate-copy {
 position: absolute;
-    top: 60%;
-    left: 4.5%;
-line-height: 1.7;
+    top: 45%;
+    left: 8%;
+    line-height: 1.7;
 }
 
 .tate-copy-potsu span {
@@ -395,7 +395,7 @@ padding-bottom: 1.5rem;
 }
 
 .tate-copy-tuchi span {
-  display: inline-block;
+  display: block;
   padding-top: 12rem;
 }
 
@@ -422,7 +422,7 @@ padding-bottom: 1.5rem;
 .trapeze-container {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 14rem;
 }
 
 .trapeze-copy {
@@ -438,7 +438,7 @@ padding-bottom: 1.5rem;
   display: grid;
   place-content: center;
     margin: 0 auto;
-height: 80vh;
+height: 70vh;
 }
 
 .sec-end {
@@ -562,16 +562,16 @@ h1 {
     display: none;
   }
 
-.haiku {
+.photo-square {
+  width: 22.5rem;
+}
+
+.copy-middle {
   font-size: 1.75rem;
   margin-top: 12rem;
   margin-bottom: 12rem;
 }
 
-.issa {
-  font-size: 1.25rem;
-  padding-right: 1rem;
-}
 
 h2 {
   font-size: 2.5rem;
@@ -595,14 +595,14 @@ h2 {
 }
 
 .photo-tate {
-width: 60%;
+width: 50%;
 margin-right: 7.812%;
 }
 
 .tate-copy {
     position: absolute;
     top: 30%;
-    left: 28%;
+    left: 20%;
     line-height: 2.2;
 }
 
@@ -623,11 +623,23 @@ margin-right: 7.812%;
     margin-top: 2.5rem;
 }
 
+.square-mini-container-text {
+  width: 50%;
+  font-size: .75rem;
+  line-height: 1.8;
+  align-content: center;
+}
+
+.trapeze-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18rem;
+}
 
 .photo-trapeze {
   width: 60%;
 margin-left: 2rem;
-margin-top: 16.25rem;
+margin-top: 11rem;
 }
 
 .trapeze-copy {
@@ -638,7 +650,7 @@ margin-top: 16.25rem;
 .content-end {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 6.25rem;
+margin-top: 0;
   width: 94.444%;
 
 }
@@ -724,7 +736,7 @@ height: 4.5rem;}
 
 .tate-copy {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 16%;
     line-height: 4;
 }
