@@ -67,18 +67,11 @@
     clip-path: inset(calc((1 - var(--progress)) * 30%));
   }
 
-  /* [data-scrub="textClipIn"] {
+   [data-scrub="textClipIn"] {
     color: transparent;
     background-image: linear-gradient(90deg, #424242 50%, #ccc 50%, #ccc 100%);
     background-position: calc(100% * (1 - var(--progress))) 0;
     background-clip: text;
     background-size: 200% 100%;
-    animation: textFadeIn 5s forwards;
   }
-
-  @keyframes  textFadeIn {
-  to {
-    background-position: 0 0;
-  }
-} */
 }
