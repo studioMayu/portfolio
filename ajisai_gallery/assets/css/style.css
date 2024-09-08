@@ -296,6 +296,24 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
+.h2 {
+    color: transparent;
+    background-image: linear-gradient(90deg, #424242 50%, #ccc 50%, #ccc 100%);
+    background-clip: text;
+    background-size: 200% 100%;
+    background-position: 100% 0; /* 初期位置 */
+}
+
+.h2.animate {
+    animation: textFadeIn 6s forwards; /* ウィンドウ内に入ったらアニメーション開始 */
+}
+
+@keyframes textFadeIn {
+    to {
+        background-position:0 0; /* 左から右にスライド */
+    }
+}
+
 .gallery {
   margin-top: 3.75rem;
     position: relative;
@@ -756,8 +774,11 @@ height: 4.5rem;}
 
 .photo-square-mini {
     width: 18.75rem;
-    margin-left: 0;
     margin-top: 2.5rem;
+}
+
+.square-mini-container-text {
+    font-size: 1rem;
 }
 
   .trapeze-container {
@@ -824,9 +845,7 @@ h2 {
   margin-top: 50rem;
   }
 
-.square-mini-container-text {
-    font-size: 1rem;
-}
+
 
 .end-text, .end-text-2 {
     font-size: 1.5rem;
