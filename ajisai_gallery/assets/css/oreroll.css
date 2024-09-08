@@ -33,14 +33,6 @@
   }
 }
 
-/* 古いブラウザに対応させる場合
-[data-trigger="slideUpIn"][data-inview="false"]{
-
-}
-
-[data-trigger="slideUpIn"][data-inview="true"]{}
-*/
-
 [data-trigger="slideUpIn"] {
   --property: opacity, translate;
 
@@ -54,10 +46,9 @@
   }
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   [data-effect="parallax"] {
-    --range: 500;
+    --range: 300;
     --translate: calc((var(--range) * -1px) + (var(--range) * 2px) * var(--progress, 0));
 
     translate: 0 var(--translate);
@@ -67,9 +58,9 @@
     clip-path: inset(calc((1 - var(--progress)) * 30%));
   }
 
-   [data-scrub="textClipIn"] {
+  [data-scrub="textClipIn"] {
     color: transparent;
-    background-image: linear-gradient(90deg, #424242 50%, #ccc 50%, #ccc 100%);
+    background-image: linear-gradient(90deg, #000 50%, #ccc 50%, #ccc 100%);
     background-position: calc(100% * (1 - var(--progress))) 0;
     background-clip: text;
     background-size: 200% 100%;
