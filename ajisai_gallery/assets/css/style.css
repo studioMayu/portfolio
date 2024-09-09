@@ -285,7 +285,6 @@ writing-mode: lr;
   background: linear-gradient(#fff 60%, #eefafb 70%, #f1e3f9, #d9dfed);
 }
 
-/* shadowをもっとうすくぼやーっとするかなし？ */
 .shadow {
 box-shadow: 0px 20px 24px 1px rgba(0, 0, 0, 0.04);
 }
