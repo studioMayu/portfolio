@@ -296,24 +296,6 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
-.h2 {
-    color: transparent;
-    background-image: linear-gradient(90deg, #424242 50%, #ccc 50%, #ccc 100%);
-    background-clip: text;
-    background-size: 200% 100%;
-    background-position: 100% 0; /* 初期位置 */
-}
-
-.h2.animate {
-    animation: textFadeIn 6s forwards; /* ウィンドウ内に入ったらアニメーション開始 */
-}
-
-@keyframes textFadeIn {
-    to {
-        background-position:0 0; /* 左から右にスライド */
-    }
-}
-
 .gallery {
   margin-top: 3.75rem;
     position: relative;
@@ -580,6 +562,7 @@ h1 {
     display: none;
   }
 
+
 .copy-middle {
   font-size: 1.75rem;
   margin-top: 12rem;
@@ -771,7 +754,7 @@ height: 4.5rem;}
   width: 60.75%;
   margin-top: 18rem;
   display: flex;
-  margin-left: 10rem;
+  margin-left: 3rem;
   }
 
 .photo-square-mini {
