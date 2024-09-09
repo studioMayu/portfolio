@@ -46,6 +46,33 @@
   }
 }
 
+[data-trigger="colorFade"] {
+      --duration: 5s;
+      --easing: ease-in-out;
+      --bg-size: 200% 100%; /* 初期状態で背景の大きさを設定 */
+      --bg-pos-start: 100% 0;
+      --bg-pos-end: 0 0;
+
+      background: linear-gradient(90deg, #424242 50%, #ccc 50%, #ccc 100%);
+      background-size: var(--bg-size);
+      background-position: var(--bg-pos-start);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent; /* テキストの色を透明にして背景グラデーションを見せる */
+
+      transition: background-position var(--duration) var(--easing);
+    }
+
+    /* 非表示状態 */
+    [data-trigger="colorFade"][data-inview="false"] {
+      background-position: var(--bg-pos-start);
+    }
+
+    /* 表示状態 */
+    [data-trigger="colorFade"][data-inview="true"] {
+      background-position: var(--bg-pos-end);
+    }
+
 @media (prefers-reduced-motion: no-preference) {
   [data-effect="parallax"] {
     --range: 300;
