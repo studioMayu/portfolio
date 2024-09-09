@@ -270,11 +270,6 @@ object-fit: cover;
   letter-spacing: 0.3em;
 }
 
-.kv_text_f1 {
-  display: none;
-font-size: 2.5rem;
-writing-mode: lr;
-}
 
 .kv_copy_br {
   display: block;
@@ -288,7 +283,6 @@ writing-mode: lr;
 .shadow {
 box-shadow: 0px 20px 24px 1px rgba(0, 0, 0, 0.04);
 }
-
 
 
 h2 {
@@ -356,7 +350,6 @@ place-items: center;
 
 
 .copy-middle {
-  margin: 0 auto;
 writing-mode: vertical-rl;
 font-size: 1.25rem;
 word-break: keep-all;
