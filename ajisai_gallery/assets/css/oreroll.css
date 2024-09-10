@@ -47,8 +47,8 @@
 }
 
 [data-trigger="colorFade"] {
-      --duration: 4s;
-      --easing: ease-in-out;
+      --duration: 3s;
+    --easing: cubic-bezier(0.63, -0.09, 0.56, 0.8);
       --bg-size: 200% 100%; /* 初期状態で背景の大きさを設定 */
       --bg-pos-start: 100% 0;
       --bg-pos-end: 0 0;
