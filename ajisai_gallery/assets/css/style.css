@@ -219,7 +219,7 @@ justify-content: space-between;
     align-items: center;
 }
 
-h1 {
+.logo {
   width: 6.25rem;
   padding-top: .4rem;
   padding-bottom: .4rem;
@@ -507,9 +507,8 @@ display: inline-block;
 }
 
 
-h1 {
-  font-size: 1.5rem;
-  width: 8rem;
+.logo {
+  width: 10rem;
 }
 
 .sub-title {
