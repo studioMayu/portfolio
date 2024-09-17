@@ -788,6 +788,18 @@ height: 4.5rem;}
 .square-mini-container {
   margin-top: 24rem;
   }
+
+.square-mini-container-text {
+    width: 40%;
+}
+
+.photo-square-mini {
+  margin-left: 30%;
+}
+
+ .trapeze-container {
+  margin-top: 20rem;
+  } 
 }
 
 
