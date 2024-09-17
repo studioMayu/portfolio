@@ -760,16 +760,12 @@ height: 4.5rem;}
   .trapeze-container {
     display: flex;
     flex-direction: column;
-    margin-top: 18rem;
+    margin-top: 24rem;
 }
 
 .trapeze-copy {
   margin-right: 34%;
   }
-
-.trapeze-container {
-    margin-top: 12rem;
-}
 
 .trapeze-copy-ippo {
   height: 100vh;
