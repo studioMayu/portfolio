@@ -606,20 +606,20 @@ margin-right: 7.812%;
 }
 
 .square-mini-container {
-    margin-top: 7rem;
+    margin-top: 22rem;
     display: flex;
     width: 70%;
 }
 
 .photo-square-mini {
     width: 12rem;
-    margin-left: 7.812%;
+    margin-left: 22%;
     margin-top: 2.5rem;
 }
 
 .square-mini-container-text {
   width: 50%;
-  font-size: .75rem;
+  font-size: .875rem;
   line-height: 1.8;
   align-content: center;
 }
@@ -742,7 +742,7 @@ height: 4.5rem;}
 }
 
 .square-mini-container {
-  width: 60.75%;
+  width: 80%;
   margin-top: 18rem;
   display: flex;
   margin-left: 3rem;
@@ -760,7 +760,7 @@ height: 4.5rem;}
   .trapeze-container {
     display: flex;
     flex-direction: column;
-    margin-top: 12rem;
+    margin-top: 18rem;
 }
 
 .trapeze-copy {
