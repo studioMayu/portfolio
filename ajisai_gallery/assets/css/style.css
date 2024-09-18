@@ -715,7 +715,17 @@ height: 4.5rem;}
   margin-top: 18rem;
 }
 
+.square-item:first-child {
+  width: 22.5rem;
+}
 
+.square-item:nth-child(2) {
+  width: 22.5rem;
+}
+
+.photo-square {
+  width: 22.5rem;
+}
 .photo-square {
   width: 22.5rem;
 }
