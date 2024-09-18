@@ -793,7 +793,7 @@ height: 4.5rem;}
 /* ------------ 1440px以上 --------------------- */
 @media screen and (min-width:1440px){
 .square-mini-container {
-  margin-top: 24rem;
+  margin-top: 40rem;
   }
 
 .square-mini-container-text {
@@ -837,7 +837,7 @@ h2 {
   }
 
 .square-mini-container {
-  margin-top: 38rem;
+  margin-top: 48rem;
   width: 60%;
   }
   
