@@ -837,11 +837,10 @@ h2 {
   }
 
 .square-mini-container {
-  margin-top: 50rem;
+  margin-top: 38rem;
+  width: 60%;
   }
-
-
-
+  
 .end-text, .end-text-2 {
     font-size: 1.5rem;
     }
