@@ -329,13 +329,14 @@ margin-right: auto;
 }
 
 .square-item:first-child {
+  width: 12.5rem;
   margin-left: 3rem;
 }
 
 .square-item:nth-child(2) {
+  width: 12.5rem;
   margin-right: 2.5rem;
 }
-
 
 .photo-square {
   width: 12.5rem;
